@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let result;
+    let gt;
+    for (let i = 1; i <= 100; i++){
+        if (i%5==0 && i%3==0){
+            gt = "<strong>FizzBuzz</strong>";
+        }else if (i%5==0){
+            gt = "Buzz";
+        }else if (i%3==0){
+            gt = "Fizz";
+        }else {
+            gt = i;
+        }
+        document.write(gt);
+    }
+</script>
+</body>
+</html>

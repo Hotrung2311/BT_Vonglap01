@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dãy Fibonacci</title>
+</head>
+<body>
+Dãy Fibonacci bắt đầu từ 1:
+    <script>
+        let Fibo = [];
+        let numbers = Number(prompt("Số lượng số trong dãy Fibonacci muốn in ra"));
+        let i;
+        Fibo[0]=1;
+        Fibo[1]=1;
+        Fibo.length = numbers;
+        for (i = 2; i <= numbers; i++){
+            Fibo[i] = Fibo[i - 1] + Fibo [i - 2];
+        }
+        document.write(Fibo);
+    </script>
+</body>
+</html>

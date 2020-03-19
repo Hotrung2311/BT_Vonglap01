@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Fibo = [];
+    let numbers = Number(prompt("Số lượng số trong dãy Fibonacci muốn in ra"));
+    let i;
+    let sum = 2;
+    Fibo[0]=1;
+    Fibo[1]=1;
+    Fibo.length = numbers;
+    for (i = 2; i <= numbers; i++){
+        Fibo[i] = Fibo[i - 1] + Fibo [i - 2];
+        sum += Fibo[i];
+    }
+    console.log(sum);
+    document.write(Fibo);
+</script>
+</body>
+</html>
